@@ -13,7 +13,8 @@ fi
 # ── Launch ComfyUI ───────────────────────────────────────────────
 echo "  → Launching ComfyUI on port 8188..."
 echo ""
-exec $VENV_PYTHON "$COMFYUI_DIR/main.py" \
+cd "$COMFYUI_DIR"
+exec $VENV_PYTHON main.py \
     --listen 0.0.0.0 \
     --port 8188 \
     --use-sage-attention
