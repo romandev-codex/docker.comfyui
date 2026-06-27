@@ -34,7 +34,7 @@ RUN cd /workspace/ComfyUI/custom_nodes && \
     git clone https://github.com/crystian/ComfyUI-Crystools && \
     git clone https://github.com/MoonGoblinDev/Civicomfy && \
     git clone https://github.com/jnxmx/ComfyUI_HuggingFace_Downloader && \
-    git clone https://github.com/romandev-codex/ComfyUI-LoadByUrl && \
+    git clone https://github.com/romandev-codex/ComfyUI-LoadByUrl
 RUN for dir in /workspace/ComfyUI/custom_nodes/*/; do \
         if [ -f "$dir/requirements.txt" ]; then \
             /workspace/ComfyUI/.venv/bin/pip install -r "$dir/requirements.txt" --quiet || true; \
